@@ -33,7 +33,7 @@ class PostService {
         }
      }
 
-     async updatePost(postId){
+     async updatePost(postId,data){
         try {
          const post = await this.postRepository.updatePost(postId,data);
          return post;
